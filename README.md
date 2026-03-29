@@ -4,8 +4,6 @@ A lightweight toolset for Rhino 3D that covers the small frictions in every
 design-to-fabrication workflow — scale conversion, unit normalization,
 fabrication tolerances, and batch export.
 
-![Ibis](assets/ibislogo.png)
-
 > Ibis is the successor to Inchworm,
 > rebuilt as a full toolset with a new structure and three additional tools.
 

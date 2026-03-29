@@ -1,4 +1,5 @@
 build/
+assets/
 
 __pycache__/
 *.pyc
@@ -11,6 +12,8 @@ Desktop.ini
 
 *.bak
 *.swp
+
+*png
 
 *.zip
 *.yak
