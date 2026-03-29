@@ -1,28 +1,90 @@
-# Inchworm for Rhino 8
+# Ibis
 
-A standalone, cross-platform scale conversion utility for Rhinoceros 3D. Built with Eto.Forms, Inchworm is designed to eliminate the friction of manual scale math during digital fabrication and computational modelling workflows.
+A lightweight toolset for Rhino 3D that covers the small frictions in every
+design-to-fabrication workflow — scale conversion, unit normalization,
+fabrication tolerances, and batch export.
 
-## Features
+![Ibis](assets/ibis_banner.png)
 
-* **Bidirectional Calculation:** Modify the Real-World or Model lengths, and the counterpart updates instantly with zero latency.
-* **Session History:** Automatically logs up to 8 recent calculations in a persistent list, providing quick reference during complex physical assemblies.
-* **Scale Presets:** One-click standard architectural and engineering ratios (1:50, 1:100, 1:200, 1:500, 1:1000).
-* **Frictionless Extraction:** Pressing `Enter` or clicking 'Copy & Log' bakes the formatted result to your clipboard and the Rhino command history.
-* **Visual Error Handling:** Invalid inputs trigger a non-blocking UI alert rather than failing silently.
-* **Native Cross-Platform:** Compiled for Rhino 8, working seamlessly on both Windows and macOS.
+> Ibis is the successor to Inchworm,
+> rebuilt as a full toolset with a new structure and three additional tools.
+
+---
+
+## Tools
+
+**Scale** — Convert between real-world and model dimensions at any ratio.
+Set a ratio (or pick a preset), enter a value, and the other side updates
+instantly. Session history keeps your recent conversions a click away.
+
+**Normalize** — Fix unit mismatches in received files. Ibis detects the
+current document unit, lets you rescale all or selected objects to a target
+unit, and optionally updates the document unit system. Fully undoable.
+
+**Tolerance** — Look up fabrication tolerances by process and material.
+Covers laser cut, CNC milling, FDM, SLA/DLP, and sheet metal bending.
+Shows nominal, ± tolerance, min/max, kerf compensation, and minimum bend
+radius where applicable.
+
+**Export** — Batch-convert a list of dimensions at a given scale and export
+the result as a CSV — ready for cut lists, spec sheets, or fabrication
+documentation.
+
+---
 
 ## Installation
 
-### Method 1: Rhino Package Manager (Recommended)
-1. Open Rhino 8.
-2. Type `PackageManager` in the command line.
-3. Search for **Inchworm** and click Install.
-4. Restart Rhino and type `Inchworm` to launch the utility.
+### Via Rhino Package Manager (recommended)
+1. Open Rhino
+2. Run `PackageManager` in the command line
+3. Search for **Ibis**
+4. Click Install
 
-### Method 2: Manual Installation
-1. Go to the [Releases](../../releases) page.
-2. Download the latest `.rhp` file.
-3. Drag and drop the `.rhp` file into your Rhino 8 viewport.
+### Manual
+1. Download the latest release from [Food4Rhino](https://www.food4rhino.com)
+2. Drag the `.rhp` file into an open Rhino viewport
+3. Run `Ibis` to open the toolset
+
+---
+
+## Requirements
+
+- Rhino 7 or 8
+- Windows or macOS
+
+---
+
+## Usage
+
+Run `Ibis` from the Rhino command line. The panel floats above the viewport
+and stays accessible while you work — you can select objects in Rhino without
+closing it.
+
+---
+
+## Migrating from Inchworm
+
+Ibis replaces Inchworm entirely. The Scale tool works the same way with the
+same logic — your workflow is unchanged. Inchworm can be uninstalled via the
+Rhino Package Manager once Ibis is installed.
+
+---
+
+## Contributing
+
+Bug reports and feature requests are welcome via
+[GitHub Issues](https://github.com/ruimoreira/ibis/issues).
+
+---
+
+## Support
+
+Ibis is free and open source. If it saves you time on a project, you can
+[buy me a coffee](https://ko-fi.com/ruimoreira) — it helps keep the tool
+maintained and new features coming.
+
+---
 
 ## License
-Distributed under the MIT License.
+
+[MIT](LICENSE) — free to use, modify, and distribute.
