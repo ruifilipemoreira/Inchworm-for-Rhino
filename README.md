@@ -4,7 +4,7 @@ A lightweight toolset for Rhino 3D that covers the small frictions in every
 design-to-fabrication workflow — scale conversion, unit normalization,
 fabrication tolerances, and batch export.
 
-![Ibis](assets/ibis_banner.png)
+![Ibis](assets/ibislogo.png)
 
 > Ibis is the successor to Inchworm,
 > rebuilt as a full toolset with a new structure and three additional tools.
@@ -41,15 +41,15 @@ documentation.
 4. Click Install
 
 ### Manual
-1. Download the latest release from [Food4Rhino](https://www.food4rhino.com)
-2. Drag the `.rhp` file into an open Rhino viewport
+1. Download the latest release from [Food4Rhino](https://www.food4rhino.com/en/app/ibis)
+2. Drag the `.yak` file into an open Rhino viewport
 3. Run `Ibis` to open the toolset
 
 ---
 
 ## Requirements
 
-- Rhino 7 or 8
+- Rhino 8
 - Windows or macOS
 
 ---
